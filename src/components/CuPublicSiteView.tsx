@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Menu, Search, ArrowRight, X } from 'lucide-react';
 import { CULogo } from './CuBrandIcons';
 import { Language } from '../data/cuData';
+import heroImg from '../assets/images/cu_campus_hero_1791106433220.jpg';
+import rennesImg from '../assets/images/cu_news_rennes_1791106448259.jpg';
+import hackathonImg from '../assets/images/cu_news_hackathon_1791106461122.jpg';
 
 interface CuPublicSiteViewProps {
   initialMode?: 'cu_home' | 'programs_auth';
@@ -222,7 +225,7 @@ export function CuPublicSiteView({
       {/* Hero Campus Section with 4 Colored Boxes */}
       <section className="relative w-full h-[270px] sm:h-[340px] bg-[#b86b52] overflow-hidden">
         <img
-          src="/src/assets/images/cu_campus_hero_1791106433220.jpg"
+          src={heroImg}
           alt="Caucasus University Campus"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover"
@@ -277,7 +280,7 @@ export function CuPublicSiteView({
           <div className="group cursor-pointer" onClick={onEnterStudentPortal}>
             <div className="aspect-[4/3] w-full overflow-hidden rounded-[2px] bg-gray-100 mb-2.5">
               <img
-                src="/src/assets/images/cu_news_rennes_1791106448259.jpg"
+                src={rennesImg}
                 alt="CSB and Rennes Business School students"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -300,7 +303,7 @@ export function CuPublicSiteView({
           <div className="group cursor-pointer" onClick={onEnterStudentPortal}>
             <div className="aspect-[4/3] w-full overflow-hidden rounded-[2px] bg-gray-100 mb-2.5">
               <img
-                src="/src/assets/images/cu_news_hackathon_1791106461122.jpg"
+                src={hackathonImg}
                 alt="Solana Hackathon"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"

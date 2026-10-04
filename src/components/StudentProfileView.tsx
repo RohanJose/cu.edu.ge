@@ -25,7 +25,7 @@ interface StudentProfileViewProps {
   darkMode: boolean;
 }
 
-const DEFAULT_AVATAR_PATH = '/src/assets/images/student_avatar_sajin_1791107653445.jpg';
+import DEFAULT_AVATAR_PATH from '../assets/images/student_avatar_sajin_1791107653445.jpg';
 
 export function StudentProfileView({ language, darkMode }: StudentProfileViewProps) {
   const [profile, setProfile] = useState<StudentProfileData>(() => {

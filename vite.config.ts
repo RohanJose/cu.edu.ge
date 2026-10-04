@@ -5,6 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    // GitHub Pages serves the project site from /cu.edu.ge/
+    base: process.env.GITHUB_ACTIONS ? '/cu.edu.ge/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
