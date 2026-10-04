@@ -1,0 +1,6 @@
+{
+  "name": "Caucasus University Student Portal",
+  "description": "Official student portal (student.cu.edu.ge) and campus website replica for Caucasus University featuring academic timetable, student profile, semester courses, grades, and authorization gateway.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
